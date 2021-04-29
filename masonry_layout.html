@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masonry layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Gothic A1', sans-serif;
+        }
+        #columns {
+            column-width: 350px;
+            /* border: 1px solid #820024; */
+            column-gap: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #columns figure {
+            display: inline-block;
+            border: 1px solid #820024;
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-shadow: 5px 5px 5px lightgray;
+        }
+        #columns figure img {
+            width: 100%;
+        }
+        #columns figure figcaption {
+            border-top: 1px solid gray;
+            padding: 5px;
+            background-color: #f7f7f7;
+        }
+        .kiwoom {
+            font-weight: bold;
+            color: #820024;
+        }
+    </style>
+</head>
+<body>
+    <div id="columns">
+        <figure>
+            <img src="https://ww.namu.la/s/1b826c7eeaa72c0ebfcdd2ac1d08b8f6f9345cb1ac1f529783a3f4a81974341e751eb96c1cbbd78d08d9935686d2436e253456c41bbb3a0d42129c6aca6f7ebc724c2129ddceda135eeb94dc6cc32ff7cb3842df9d51a3f0e0acef95fa2869ebc3750507ec5b09f700989fa86da4b8c9" alt="조상우">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 특급 마무리 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/eae020627dd52efae17ffc02e93b0f6f9d661c76ec57da91dcfa63f15fec7922cd2bde06985a68222138ae19401595d0d733b1abf5d71f7df5bcedc64330ac85e9d07f1c7a1e00959a65c6ab002916ae9d3e744aba1488373bf797a9baad64afa728b7cfc184155f495d29d00de2002f" alt="이승호">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 좌완 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/160022813ad63d5bfa215e897f377cf865434f7966564e4a94db1783a9000687e15bf2f71ca0c34563fcd386100b7ab29756340b3e0d827f0b0624fc17d1c43c58a000e0922da4dbd2f1bfe9a63317f5d74fefe1cad53546074fc18ed64d083bf0eaccc5815702c7bc7025ea822fcca7" alt="김태훈">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 투수</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="https://w.namu.la/s/1491f5bf855b04c5da0d786bd4ef419b4818b8a513b378d174ba31d2373db6853150298833bc2b1c438df939531471c8ced87573bf858928c12a4da67b58cf53ccc2c37bcd9473b9d6cb1d775c277bdfe388b3d46026c1841ee5fb359c1f722e3279522a2d9b0427fc40684b7e36936c" alt="한현희">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 사이드암 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://ww.namu.la/s/40b17f1d9b7858c682deb9f511dd0bf93b9cc5d1a369c0480c53dcb098acaf1d5d747e5559479c4b5940b80dbc1877b529030cd5b5ff7090010b6d78f265af7a0d7724cd39a6042c581c238f33fcc7debcc2c4d30348a473d34d88c6bfb368c9dbecfc32ffc8ba5851b7b437c9a0de7e" alt="김성민">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 좌완 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/85994458dd70ecd3c25322322caaad3b3b4c42771629dc75b533730a4718006802176650e8fe25328304ad5b73fa679cde3191a98572ff1a748b8ec51bc7197a19ab15514d6a51bb3fe7a7abb31e1901ade083772347342ec1322a10b9bbd5052d9026ac81e1e14d2d0063058288766c" alt="이영준">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 좌완 투수</figcaption>
+        </figure>
+    
+        <figure>
+            <img src="https://w.namu.la/s/b406793f37867bf65e68afcbe80cf4f58d350abff32d046ee95918364f4b9bebf758990e4cd28b145cdff27cd04208a58d20fa85706d09246f96bd2c40f9d957971bb461c9779235241b88801248da25fdd3208050eaa22b24a8ab50649a9cbae347e86590c1b7b793664e0f3a14399a" alt="양현">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 언더핸드 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/44cc0c42d10de1889ed61d889b8e61e4a9298f8a96a504d83d2bc8b8413886e76bd2fc3cc1f747b3c9a4b4bd5b03d4b431de7ada154b17376841c340bd161e720d3bb561c958cd7ae82b0ac65970c27b85bf1a58f3d58ff0cce9d4c25b8c2cacb6237b683dd6aead19da0c128c5fa394" alt="안우진">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/ab9faf28bd9ee548c04ffd2c907f2a77b6d7ec4016d057b2f09da13f90c8a3a1c63856ff352c883b0dc78e252ec5ae4fdbe8e96ed15220021287397691e3478dc26b3b5e45c436cd56fd1de79a44b51f2e18dbdda1647fc80fd352a96dc3c583d0d915d79b3b080e4511b0b0aa51e574" alt="장재영">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 우완 투수</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://w.namu.la/s/4c1426cdddd1f78edcf0cf9dc86c3b0debaa5a5b88fdcdf47cb295b4fa305cd810f3f748b054679a0a9131170241b70b1f4b6cce7aaec84b34c2035825beed4a5b561ea5f7c3d50762f540bb3a408fc021e5387472ecac454518d74be3b94d1b035b161e3c9f51a62b055f7bb20f1cf2" alt="">
+            <figcaption><span class="kiwoom">키움 히어로즈</span> 소속의 우완 투수</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
